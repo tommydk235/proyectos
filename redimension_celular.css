@@ -1,0 +1,89 @@
+@media (max-width: 800px){
+	
+/*Todo esto es del header*/
+	*{
+		transition: all 0.6s;
+	}
+	header{
+		font-size: 11px;
+		height: 40px;
+	}
+
+	.creador{
+		width: 80px;
+		font-size: 12px;
+	}
+
+	#modo_oscuro{
+		width: 80px;
+	}
+
+	.caja_titulo_principal{
+		height: 240px;
+		margin-top: 40px;
+
+	}
+
+	.floro{
+		padding: 15px;
+	}
+
+	.caja_boton--mobile{
+		position: absolute;
+		display: block;
+		top: -1000px;
+		height: 1000px;
+		width: 100%;
+		z-index: 600;
+		transition: all 0.6s;
+	}
+
+	nav{
+		position: absolute;
+		top: -460px;
+		width: 100vw;
+		flex-direction: column;
+		z-index: 700;
+	}
+
+	.nav_elemento{
+		font-size: 20px;
+	}
+
+	#icono_hamburguesa{
+		display: block;
+	}
+
+	#icono_cerrar{
+		display: block;
+		opacity: 0;
+	}
+	.boton_hamburguer{
+		display: block;
+	}
+
+
+	.boton_hamburguer:hover ~ #icono_hamburguesa{
+		color: white;
+	}
+
+	.boton_hamburguer:hover ~ #icono_cerrar{
+		color: white;
+	}
+
+	.boton_hamburguer:checked ~ nav{
+		top: 40px;
+		display:flex;
+	}	
+
+	.boton_hamburguer:checked ~ .caja_boton--mobile{
+		top: 0;
+	}	
+
+	.boton_hamburguer:checked ~ #icono_cerrar{
+		opacity: 1;
+	}
+
+	.boton_hamburguer:checked ~ #icono_hamburguesa{
+		opacity: 0;
+	}

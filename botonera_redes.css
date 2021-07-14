@@ -1,0 +1,18 @@
+.contenedor{
+	width: 3%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	margin-left: 96%;
+	z-index: 200;
+}
+.botonera {
+	width: 100%;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.botonera a img{
+	width: 100%;
+}

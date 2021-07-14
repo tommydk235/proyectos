@@ -1,0 +1,91 @@
+body{
+	height: 1000vh;
+}
+.caja_imagen{
+	width: 100%;
+	height: calc(100vh - 4em);
+	position: relative;
+	margin-top: 4em;
+	display: flex;
+}
+
+.caja_imagen--titulo{
+	position: absolute;
+	z-index: 100;
+	color: white;
+	font-size: 50px;
+	font-weight: bolder;
+	margin-top: 40vh;
+	margin-left: 40vw;
+
+}
+
+.imagen{
+	position: absolute;
+	width: 100%;
+	height: calc(100vh - 4em);
+	animation-name: cambio_1;
+	animation-duration: 10s;
+	animation-delay: 5s;
+	animation-iteration-count: infinite;	
+}
+
+.imagen_2{
+	position: absolute;
+	width: 100%;
+	height: calc(100vh - 4em);
+	opacity: 0;
+	animation-name: cambio_2;	
+	animation-duration: 10s;
+	animation-delay: 5s;
+	animation-iteration-count: infinite;	
+
+}
+
+
+@keyframes cambio_2{
+	0% {opacity: 1;}
+	20% {opacity: 0.5;}
+	40% {opacity: 0;}
+}
+
+
+@keyframes cambio_2{
+	0% {opacity: 0;}
+	20% {opacity: 0.5;}
+	40% {opacity: 1;}
+}
+
+
+/*---------------------- Caja Video-----------------------*/
+
+.caja_video{
+	height: 70vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background-color: #7892b1;
+}
+
+.caja_video iframe{
+	margin-top: 5vw;
+
+}
+
+.caja_video--texto{
+	display: flex;
+	flex-wrap: wrap;
+	width: 40vw;
+	font-size: 20px;
+	height: 60%;
+	margin-top: 6.5vw;
+}
+
+.caja_video--texto p{
+	color: darkslateblue;
+	margin: auto;
+}
+
+.caja_video--texto #pregunta{
+	font-size: 30px;
+}

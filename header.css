@@ -1,0 +1,133 @@
+body{
+	height: 100vh;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	background-color: #f6e200;
+	height: 4em;
+	width: 100%;
+	z-index: 800;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: -3px 5px 5px black;
+	transition: background 0.5s;
+}
+
+#modo_oscuro{
+	position: absolute;
+	height: 100%;
+	width: 9vw;
+	z-index: 500;
+	opacity: 0;
+	z-index: 1000;
+	cursor: help;
+}
+
+.creador{
+	font-weight: 700;
+	font-size: 120%;
+	height: 100%;
+	width: 9vw;
+	padding: 1em;
+	z-index: 400;
+	transition: all 0.6s;
+
+}
+
+#modo_oscuro:hover ~ .creador{
+	/*background-color: #ffee2d;*/
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+	transition: all 0.6s;
+}
+
+nav a{
+	position: relative;
+	padding: 1.6em;
+	height: 100%;
+	text-decoration: none;
+}
+
+
+nav a:hover{
+	background-color: #ffee2d;
+	color: white;
+}
+
+
+.caja_boton--mobile{
+	position: relative;
+	background-color: #f6e200;
+	display: none;
+	z-index: 100;
+}
+
+.botonera_header{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	position: absolute;
+	top: 500px;
+}
+
+.botonera_header a{
+	padding: 40px;
+	transition: color 0.3s,border-bottom 0.3s;
+}
+
+.botonera_header a:hover{
+	background-color: #ffee2d;
+}
+
+.botonera_header a:hover i{
+	border-bottom: 1px solid white;
+}
+
+.botonera_header a:hover{
+	color: white;
+}
+
+.botonera_header a i{
+	font-size: 20px;
+}
+
+/* Elementos para el menu hamburguesa */
+.boton_hamburguer{
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	height: 100%;
+	width: 3em;
+	right: 0;
+	opacity: 0;
+	z-index: 1800;
+}
+
+
+#icono_hamburguesa, #icono_cerrar{
+	position: absolute;
+	padding-right: 0.4m;
+	width: 1em;
+	right: 0;
+	font-size: 3em;
+	height: 100%;
+	display: none;
+	text-align: center;
+}
+
+#icono_cerrar{
+	display: none;
+	z-index: 1000;
+
+}
+
+#icono_hamburguesa{
+	display: none;
+	z-index: 900;
+
+}
